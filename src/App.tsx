@@ -185,6 +185,7 @@ function App() {
                 <li>ファビコン: <a href="https://hpgpixer.jp/image_icons/sports/icon_baseball_batter.html">PixelGaroさま</a></li>
               </ul>
               <p>つくった人: <a href="https://twitter.com/n1kaera">にかえら</a> </p>
+              <p>つくった記事: <a href="https://crieit.net/boards/web1week-202003/661fc53a1809d108713c0ebcb2e0ab17">立体ホームラン競争というミニゲームを作りました！</a></p>
             </Box>
           </Grid>
         </Grid>
