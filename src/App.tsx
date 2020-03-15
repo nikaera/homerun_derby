@@ -124,8 +124,10 @@ function App() {
       text = `${gameData.score}本のホームランを打った君はホームラン王だ！！！！`
     } else if (gameData.score >= HOMERUN_KING / 2) {
       text = `${gameData.score}本のホームランを打ちました！！ホームラン王まであと少し！！`
+    } else if (gameData.score === 0) {
+      text = '1本も打てませんでした。。でも大丈夫。つくった人も打てない難易度だよ！'
     }
-    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=立体ホームラン競争,web1week`);
+    window.open(`https://twitter.com/intent/tweet?text=${text}&hashtags=立体ホームラン競争,web1week&url=https://rittai-homerun.netlify.com`);
     setGameData({
       score: gameData.score,
       matchCount: gameData.matchCount,
@@ -162,6 +164,7 @@ function App() {
               <br />
               <p>とおくから飛んでくるボールを<br />ひたすらバットで打ちまくろう！</p>
               <p>飛んでくるボールはぜんぶで {MATCH_MAX}球。<br />より多くのホームランをねらおう！</p>
+              <p>{MATCH_MAX}球中 1本でもホームランが打てれば、連続してチャレンジできるぞ！</p>
               <p className={classes.gameHint}>たくさんホームランを打つと。。？</p>
             </Box>
           </Grid>
